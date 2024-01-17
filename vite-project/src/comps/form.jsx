@@ -25,15 +25,21 @@ const FormMemo = memo(function FormComponent(){
         return checkPasswordLength(password)
     },[password])
     
-
+    //-------------------------------------------------
+    //Use the Throw error to test the ErrorBoundary
+    // throw new Error('This is an intentional error');
+    //-------------------------------------------------
+    
     return (
         <form>
-                <InputComponent label="Email" type="email" value={email} onChange={handleEmailChange} />
+            
+            <InputComponent label="Email" type="email" value={email} onChange={handleEmailChange} />
             <InputComponent label="Password" type="password" value={password} onChange={handlePasswordChange} />
             <div>
                 your Password is : {Security}
             </div>
         </form>
+
     );
 });
 
