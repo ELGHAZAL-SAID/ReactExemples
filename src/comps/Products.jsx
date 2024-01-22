@@ -1,7 +1,4 @@
-
-
 import React, { useEffect } from 'react';
-
 
 const Products = () => {
     const startTime = performance.now();
