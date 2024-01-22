@@ -40,3 +40,35 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Products.css */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.product-name {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.product-price {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #007BFF;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #555;
+}

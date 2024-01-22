@@ -1,4 +1,7 @@
+
+
 import React, { useEffect } from 'react';
+
 
 const Products = () => {
     const startTime = performance.now();
@@ -14,19 +17,17 @@ const Products = () => {
 
     console.log(`Time taken to generate 100,000 products: ${timeTaken} milliseconds`);
 
-
-
     return (
-        <div>
+        <div className="product-list">
             {products.map((product, index) => (
-                <div key={index}>
-                    <h3>ProductName: {product.name}</h3>
-                    <p>Price: ${product.price}</p>
-                    <p>Description: {product.description}</p>
+                <div className="product-item" key={index}>
+                    <h3 className="product-name">ProductName: {product.name}</h3>
+                    <p className="product-price">Price: ${product.price}</p>
+                    <p className="product-description">Description: {product.description}</p>
                 </div>
             ))}
         </div>
     );
 };
 
-export default Products
+export default Products;
