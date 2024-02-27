@@ -15,6 +15,7 @@ const WeatherApp = () => {
         );
 
         setWeatherData(response.data);
+        console.log(response.data);
       } catch (error) {
         console.error('Error fetching weather data:', error);
       }
@@ -24,7 +25,7 @@ const WeatherApp = () => {
       fetchWeather();
     }
   }, [city, apiKey]);
-consolt.log(api);
+
   const handleInputChange = (e) => {
     setCity(e.target.value);
   };
