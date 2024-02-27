@@ -7,7 +7,7 @@ const WeatherApp = () => {
 
   const apiKey = 'fd6dd77f6b32a48dca3b9890c90d7c0c';
 
-  useEffect(() => {
+  const api = useEffect(() => {
     const fetchWeather = async () => {
       try {
         const response = await axios.get(
@@ -24,7 +24,7 @@ const WeatherApp = () => {
       fetchWeather();
     }
   }, [city, apiKey]);
-
+consolt.log(api);
   const handleInputChange = (e) => {
     setCity(e.target.value);
   };
